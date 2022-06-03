@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+.picc {
+  width: 50%;
+  height: 100%;
+}
+.picc img {
+  width: 100%;
+  height: 100%;
+}
+.sign {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signn h2 {
+  color: #444444;
+  font-size: 1.1964285714285714rem;
+  font-family: Proxima Nova, sans-serif;
+  font-weight: 700;
+  line-height: 1.334;
+  padding-bottom: 0.5em;
+}
+.signn hr {
+  height: 7px;
+  background: darkred;
+  border: none;
+  width: 40px;
+}
+form {
+  margin-top: 1em;
+  width: 24em;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+label {
+  color: #757575;
+  width: 100%;
+  display: flex;
+  position: relative;
+  font-size: 0.9285714285714286rem;
+  transform: translate(0, 0) scale(1);
+  align-items: center;
+  margin-bottom: 8px;
+  justify-content: Space-between;
+}
+.inputt{
+        color: #757575;
+    width: 100%;
+    border: 1px solid #ced4da;
+    height: fit-content;
+    padding: 5px 0 5px 12px;
+    position: relative;
+    font-size: 1rem;
+    min-width: 100px;
+    transition: border-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.input input{
+    font: inherit;
+    color: currentColor;
+    width: 100%;
+    border: 0;
+    height: 1.1876em;
+    margin: 0;
+    display: block;
+    outline: none;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    animation-name: mui-auto-fill-cancel;
+    letter-spacing: inherit;
+    animation-duration: 10ms;
+    -webkit-tap-highlight-color: transparent;
+}
+.tit{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tit span{
+    width: 120px;
+    font-size: 10px;
+    color: darkred;
+}
+span{
+      text-align: center;
+    margin: auto;
+    width: 100%;
+    color: red;
+    margin-bottom: 1em;
+}
+button{
+        width: 100%;
+    padding: 1em 0;
+    border: none;
+    outline: none;
+    background: darkred;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+@media (max-width: 900px) {
+    .sign{
+        width: 100%;
+    }
+    .picc{
+        display: none;
+        width: 0;
+    }
+}
+@media (max-width: 400px) {
+    .signn{
+        width: 98%;
+    }
+    form{
+        width: 98%;
+    }
+}
